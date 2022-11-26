@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <h1>
-            Aplikasi Catatan
-        </h1>
+        <Link to="/">
+            <h1>
+                SMABisa
+            </h1>
+        </Link>
     )
 }
 

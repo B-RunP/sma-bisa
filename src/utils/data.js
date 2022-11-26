@@ -1,6 +1,6 @@
 let lessons = [
     {
-        id: 1,
+        id: 'lesson-1',
         title: 'Pengukuran',
         body: 'Pengukuran merupakan dasar pengetahuan dan keterampilan dari segala kegiatan ilmiah pada berbagai bidang keilmuan, khususnya IPA, sehingga topik ini menjadi topik pembuka pada rumpun mata pelajaran IPA kelas X.',
         mapel: 'IPA',
@@ -9,16 +9,16 @@ let lessons = [
         archived: false,
     },
     {
-        id: 2,
+        id: 'lesson-2',
         title: 'Sel',
-        body: 'Sel tumbuhan dan sel hewan memiliki persamaan dan perbedaan struktur sel dan fungsinya. Persamaan sel tumbuhan dan sel hewan adalah kedua sel 			memiliki bagian-bagian sel, seperti membran sel, sitoplasma, nukleus, mitokondria, ribosom, retikulum endoplasma (RE), aparatus golgi, lisosom, dan peroksisom. 	Untuk mengetahui struktur dan fungsi bagianbagian sel tersebut, mari cermati uraian berikut ini',
+        body: 'Sel tumbuhan dan sel hewan memiliki persamaan dan perbedaan struktur sel dan fungsinya. Persamaan sel tumbuhan dan sel hewan adalah kedua sel 			memiliki bagian-bagian sel, seperti membran sel, sitoplasma, nukleus, mitokondria, ribosom, retikulum endoplasma (RE), aparatus golgi, lisosom, dan peroksisom. 	Untuk mengetahui struktur dan fungsi bagian bagian sel tersebut, mari cermati uraian berikut ini',
         mapel: 'IPA',
         kelas: '11',
         createdAt: '2022-04-14T04:27:34.572Z',
         archived: false,
     },
     {
-        id: 3,
+        id: 'lesson-3',
         title: 'Ekosistem darat Bioma',
         body: 'Ekosistem darat Bioma adalah ekosistem darat yang khas pada wilayah tertentu dan dicirikan oleh jenis vegetasi yang dominan pada wilayah tersebut.',
         mapel: 'IPA',

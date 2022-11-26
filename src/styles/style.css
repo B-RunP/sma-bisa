@@ -67,7 +67,7 @@ main {
     max-width: 1200px;
 }
 
-.notes-list {
+.lessons-list {
     margin-top: 32px;
     display: grid;
     grid-template-columns: 1fr;
@@ -75,34 +75,36 @@ main {
     padding: 16px 8px;
 }
 
-.notes-list-empty {
+.lessons-list-empty {
     margin-top: 32px;
     padding: 16px 8px;
 }
 
-.notes-list-empty p {
+.lessons-list-empty p {
     text-align: center;
     color: var(--on-background-grey);
 }
 
-.note-item {
+.lesson-item {
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #000000;
     border-top: 5px solid;
 }
 
-.note-item__title {
+.lesson-item__title {
+    text-decoration: none;
+    color: var(--background);
     margin: 4px 0;
 }
 
-.note-item__createdAt {
+.lesson-item__createdAt {
     color: var(--on-background-grey);
     font-size: 14px;
     margin: 4px 0;
 }
 
-.note-item__body {
+.lesson-item__body {
     margin-top: 16px;
     overflow: hidden;
     display: -webkit-box;
@@ -121,6 +123,8 @@ main {
     font-size: 48px;
     margin-bottom: 8px;
     word-wrap: break-word;
+    text-decoration: none;
+    color: var(--background);
 }
 
 .detail-page__createdAt {
@@ -141,6 +145,11 @@ main {
     gap: 16px;
     bottom: 32px;
     right: 32px;
+}
+
+Link {
+    text-decoration: none;
+    color: var(--background);
 }
 
 .action {
@@ -241,33 +250,33 @@ main {
     box-shadow: 5px 5px 5px #808080;
 }
 
-.note-input {
+.lesson-input {
     margin: 0 auto;
     max-width: 500px;
     margin-bottom: 48px;
 }
 
-.note-input input,
-.note-input textarea {
+.lesson-input input,
+.lesson-input textarea {
     display: block;
     width: 100%;
 }
 
-.note-input__title {
+.lesson-input__title {
     font-weight: bold;
 }
 
-.note-input__title__char-limit {
+.lesson-input__title__char-limit {
     font-size: 14px;
     text-align: right;
     color: #aaa;
 }
 
-.note-input__body {
+.lesson-input__body {
     min-height: 175px;
 }
 
-.note-input button {
+.lesson-input button {
     display: block;
     width: 100%;
     padding: 8px;
@@ -368,7 +377,7 @@ textarea {
 }
 
 @media screen and (min-width: 650px) {
-    .notes-list {
+    .lessons-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -380,13 +389,13 @@ textarea {
 }
 
 @media screen and (min-width: 850px) {
-    .notes-list {
+    .lessons-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .notes-list {
+    .lessons-list {
         grid-template-columns: repeat(4, 1fr);
     }
 }
