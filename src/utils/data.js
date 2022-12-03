@@ -6,7 +6,6 @@ let lessons = [
         mapel: 'IPA',
         kelas: '10',
         createdAt: '2022-04-14T04:27:34.572Z',
-        archived: false,
     },
     {
         id: 'lesson-2',
@@ -15,7 +14,6 @@ let lessons = [
         mapel: 'IPA',
         kelas: '11',
         createdAt: '2022-04-14T04:27:34.572Z',
-        archived: false,
     },
     {
         id: 'lesson-3',
@@ -24,8 +22,9 @@ let lessons = [
         mapel: 'IPA',
         kelas: '12',
         createdAt: '2022-04-14T04:27:34.572Z',
-        archived: false,
     },
+    
+
 ];
 
 function getAllLessons() {
