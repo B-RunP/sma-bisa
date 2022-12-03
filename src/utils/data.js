@@ -23,7 +23,30 @@ let lessons = [
         kelas: '12',
         createdAt: '2022-04-14T04:27:34.572Z',
     },
-    
+    {
+        id: 'lesson-4',
+        title: 'Bentuk-Bentuk Struktur Sosial',
+        body: 'Struktur sosial adalah pergaulan hidup masyarakat meliputi tipe kelompok terjadi dari banyaknya kalangan serta lembaga yang mana kalangan ini ambil bagiannya.',
+        mapel: 'IPS',
+        kelas: '12',
+        createdAt: '2022-04-14T04:27:34.572Z',
+    },
+    {
+        id: 'lesson-5',
+        title: 'Sosiologi dalam Kehidupan',
+        body: 'Sosiologi berdasarkan etimologis, asalnya dari istilah latin Socius artinya ‘kawan, dan teman’, sedang logos asal kata dari Yunani artinya ilm’. Merujuk dari kedua kata itu, sosiologi adalah sebagai ilmu pelajari interaksi manusia terhadap kalangan masyarakat. ',
+        mapel: 'IPS',
+        kelas: '11',
+        createdAt: '2022-04-14T04:27:34.572Z',
+    },
+    {
+        id: 'lesson-6',
+        title: 'Perubahan Sosial di Masyarakat',
+        body: 'Perubahan sosial bisa dikatakan suatu perubahan gejala sosial yang terdapat di kalangan masyarakat. Perubahan tersebut meliputi fungsi, struktur, norma, nilai, pranata, serta semua aspek dihasilkan dari interaksi sesama manusia, komunitas maupun organisasi, termasuk perubahan mengenai hal budaya.',
+        mapel: 'IPS',
+        kelas: '10',
+        createdAt: '2022-04-14T04:27:34.572Z',
+    },
 
 ];
 
