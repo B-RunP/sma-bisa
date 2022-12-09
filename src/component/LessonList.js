@@ -6,10 +6,10 @@ function LessonList({ lessons }) {
         <div className="lessons-list">
             {
                 lessons.length === 0 ? (
-                    <p className="lessons-list__empty-message">Tidak Ada Catatan</p>
+                    <p className="lessons-list__empty-message">Loading...</p>
                 ) : (
                     lessons.map((lesson) => (
-                        <LessonItem key={lesson.id} id={lesson.id} {...lesson} />
+                        <LessonItem key={lesson.id} id={lesson.id} description={lesson.description} title={lesson.title} img_src={lesson.img_src} />
                     ))
                 )
             }

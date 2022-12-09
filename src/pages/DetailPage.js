@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import LessonDetail from '../component/LessonDetail';
-import { getLesson } from '../utils/data';
+import { bookDetail } from '../utils/api-data';
 
 function DetailPageWrapper() {
     const { id } = useParams();
@@ -13,20 +13,28 @@ class DetailPage extends React.Component {
         super(props);
 
         this.state = {
-            lesson: getLesson(this.props.id),
+            lesson: null,
         }
+    }
+
+    componentDidMount() {
+        bookDetail(this.props.id).then(({data}) => {
+            this.setState({
+              lesson: data
+            })
+          })
     }
 
     render() {
         console.log(this.state.lesson);
 
         if (this.state.lesson === null) {
-            return <p>Movie is not found!</p>;
+            return <p>Loading...</p>;
         }
 
         return (
             <section>
-                <LessonDetail id={this.state.lesson.id} title={this.state.lesson.title} createdAt={this.state.lesson.createdAt} body={this.state.lesson.body} />
+                <LessonDetail lessonDetail={this.state.lesson} />
             </section>
         );
     }

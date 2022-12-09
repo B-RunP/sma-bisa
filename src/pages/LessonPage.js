@@ -2,7 +2,7 @@ import React from "react";
 import { useSearchParams } from 'react-router-dom';
 import LessonList from "../component/LessonList";
 import SearchBar from "../component/SearchBar";
-import { getAllLessons } from "../utils/data";
+import { bookData } from "../utils/api-data";
 
 function LessonPageWrapper() {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -18,7 +18,7 @@ class LessonPage extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            lessons: getAllLessons(),
+            lessons: [],
             keyword: props.defaultKeyword || '',
         }
 
@@ -32,6 +32,14 @@ class LessonPage extends React.Component{
           }
         });
         this.props.keywordChange(keyword);
+    }
+
+    componentDidMount(){
+        bookData().then(({data}) => {
+          this.setState({
+            lessons: data
+          })
+        })
     }
     
     render() {

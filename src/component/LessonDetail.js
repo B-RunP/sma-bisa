@@ -1,11 +1,11 @@
 import React from "react";
 
-function LessonDetail({ id, title, createdAt, body }) {
+function LessonDetail({ lessonDetail }) {
     return (
-        <div id={id} className="lesson-page">
-            <h3 className="detail-page__title">{title}</h3>
-            <p className="detail-page__createdAt">{createdAt}</p>
-            <p className="detail-page__body">{body}</p>
+        <div id={lessonDetail.id} className="detail-page">
+            <img className="detail-page__img" src={lessonDetail.img_src} alt={lessonDetail.title} />
+            <h3 className="detail-page__title">{ lessonDetail.title}</h3>
+            <p className="detail-page__body">{lessonDetail.content}</p>
         </div >
     )
 }
