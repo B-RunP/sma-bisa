@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={<HomePage />} />
                     <Route path='/lesson' element={<LessonPage />} />
-                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/about ' element={<AboutPage />} />
                     <Route path='detail/:id' element={<DetailPageWrapper />} />
                 </Routes>
             </main>
