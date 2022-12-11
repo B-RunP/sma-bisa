@@ -10,15 +10,6 @@ import LoginPage from './pages/LoginPage';
 import { Routes, Route } from 'react-router-dom';
 import { getUserLogged, putAccessToken } from './utils/api-login';
 import DetailPageWrapper from './pages/DetailPage';
-import Home from './navbar/PageNavbar/Home';
-import Jelajah from './navbar/PageNavbar/Jelajah';
-import Favorit from './navbar/PageNavbar/Favorit';
-import Tentang from './navbar/PageNavbar/Tentang';
-import BahasaIndonesia from './navbar/PageNavbar/Bind';
-import Ipa from './navbar/PageNavbar/Ipa';
-import Ips from './navbar/PageNavbar/Ips';
-import Pemrograman from './navbar/PageNavbar/Pemrograman';
-import SignUp from './navbar/PageNavbar/SignUp';
 
 class App extends React.Component {
     constructor(props) {
