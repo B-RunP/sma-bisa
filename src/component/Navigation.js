@@ -9,7 +9,7 @@ function Navigation({logout, name}) {
             <ul>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/lesson">LESSON</Link></li>
-                <li><Link to="/about">ABOUT</Link></li>
+                {/* <li><Link to="/about">ABOUT</Link></li> */}
                 <li><button onClick={logout}>{name} <FiLogOut /></button></li>
             </ul>
         </nav>
