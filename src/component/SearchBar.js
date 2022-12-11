@@ -12,7 +12,7 @@ function SearchBar({ keyword, keywordChange }) {
     </div>
   )
 }
- 
+
 SearchBar.propType = {
   keyword: PropTypes.string.isRequired,
   keywordChange: PropTypes.func.isRequired
